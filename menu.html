@@ -1,0 +1,56 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{text-align: center;}
+    </style>
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="{% static 'css/texto.css'%}">
+    <link rel="stylesheet" href="{% static 'css/menu.css'%}">
+    <link rel="stylesheet" href="{% static 'css/busca.css'%}">
+    <link rel="stylesheet" href="{% static 'css/rodape.css'%}">
+
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" id="busca" placeholder="Digite a palavra ou frase">
+        <button onclick="realizarBusca()">Buscar</button>
+    </div>
+
+    <div id="resultados">
+        <h2>SGA TRANSPORTE</h2>
+        <p id="mostrarResultados"></p>
+    </div>
+
+    <div class="menu-bar" id="menuBar">
+        <a href="javascript:void(0)" class="close-btn" onclick="fecharMenu()">&times;</a>
+        <a href="http://127.0.0.1:8000/rebuild">PEDIDO</a>
+        <a href="#">ANALISE</a>
+        <a href="#">ROTAS</a>
+        <a href="#">AGENDAMENTO</a>
+        <a href="#">ENTREGA</a>
+        <a href="#">AVALIAÇÃO</a>
+        <a href="#">MANUTENÇÃO</a>
+        <a href="http://127.0.0.1:8000/admin/">ADMINISTRAÇÃO</a>
+        <a href="http://127.0.0.1:8000/">INICIO</a>
+    </div>
+
+    <div class="content">
+        <div class="menu-btn" onclick="abrirMenu()">&#9776;</div>
+        <h2 class="centro">SGA ROTAS</h2>
+        <p class="centro">Ferramenta De Transporte</p>
+    </div>
+
+    <div class="rodape">
+        <!-- Rodapé personalizado -->
+        <p>&copy; Sga Software</p>
+    </div>
+
+    <script type="text/javascript" src="{% static 'javascript/menu.js' %}"></script>
+    <script type="text/javascript" src="{% static 'javascript/busca.js' %}"></script>
+
+</body>
+</html>

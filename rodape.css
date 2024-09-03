@@ -1,0 +1,14 @@
+.rodape {
+    background-color: #f1f1f1;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.conteudo {
+    flex: 1;
+    padding: 20px;
+}
